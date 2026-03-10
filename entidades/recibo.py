@@ -9,7 +9,7 @@ class Recibo:
         self.fecha = fecha
     
     def calcular_precio_pagar (self) -> float:
-        if self.consumo <= 1000:
+        if self.consumo >= 1000:
             return self.consumo * Tarifa.TARIFA_PERSONA_FISICA.value
-        elif self.consumo >= 50000:
+        elif self.consumo <= 50000:
             return self.consumo * Tarifa.TARIFA_EMPRESARIAL.value

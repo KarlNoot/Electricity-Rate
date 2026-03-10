@@ -4,7 +4,7 @@ from datetime import datetime
 
 cliente1 = Cliente("Carlos Rodríguez", "Calle 8 y 9 av 3 colonia Marsella", 6221475454)
 
-recibo = Recibo(10000, cliente1, datetime.now ())
+recibo = Recibo(1700, cliente1, datetime.now ())
 
 
 print("Recibo emitido por la CFE")
